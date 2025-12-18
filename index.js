@@ -30,7 +30,7 @@ quickQuoteForm.addEventListener("submit", async(e) => {
   };
 
   try {
-    await fetch("https://aditienterprises.vercel.app/backend/api/quick-quote-form", {
+    await fetch("https://aditienterprises.vercel.app/api/quick-quote-form", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -84,7 +84,7 @@ contactForm.addEventListener("submit", async(e) => {
   };
 
   try {
-    await fetch("https://aditienterprises.vercel.app/backend/api/contact-form", {
+    await fetch("https://aditienterprises.vercel.app/api/contact-form", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -150,5 +150,6 @@ calcForm.addEventListener("submit", (e) => {
 
   calcOut.classList.remove("d-none");
 });
+
 
 
