@@ -40,11 +40,11 @@ quickQuoteForm.addEventListener("submit", async(e) => {
 
     // const result = await response.text();
 
-    alert("form submit success");
+    alert("Thank's for choosing us! We contact you shortly.");
   } catch (error) {
     console.error("Error sending form:", error);
 
-    alert("form submition failed");
+    alert("Somthing went wrong");
   }
 
   quickQuoteMsg.classList.remove("d-none");
@@ -94,20 +94,15 @@ contactForm.addEventListener("submit", async(e) => {
 
     // const result = await response.text();
 
-    alert("form submit success");
+    aalert("Thank's for choosing us! We contact you shortly.");
   } catch (error) {
     console.error("Error sending form:", error);
 
-    alert("form submition failed");
+    alert("Somthing went wrong");
   }
 
-//   const formData = new FormData(contactForm);
-//   const fields = Object.fromEntries(formData.entries());
-//   const url = buildWhatsAppURL(fields);
-//   waLink.setAttribute("href", url);
   contactMsg.classList.remove("d-none");
   contactForm.reset();
-//   window.open(url, "_blank");
 });
 
 // Calculator (simple estimate)
@@ -150,6 +145,7 @@ calcForm.addEventListener("submit", (e) => {
 
   calcOut.classList.remove("d-none");
 });
+
 
 
 
