@@ -15,7 +15,7 @@ window.addEventListener("scroll", () => {
 // Quick quote form
 const quickQuoteForm = document.getElementById("quickQuoteForm");
 const quickQuoteMsg = document.getElementById("quickQuoteMsg");
-quickQuoteFor.addEventListener("submit", async(e) => {
+quickQuoteForm.addEventListener("submit", async(e) => {
     e.preventDefault();
 
     const formData = {
@@ -71,7 +71,7 @@ waLink.addEventListener("click", (e) => {
   const url = `https://wa.me/${whatsappNumber}?text=Hello%20Aditi%20Enterprises,%20I%20want%20to%20discuss%20materials%20and%20pricing.`;
   window.open(url, "_blank");
 });
-contactFor.addEventListener("submit", async(e) => {
+contactForm.addEventListener("submit", async(e) => {
   e.preventDefault();
 
   const formData = {
@@ -150,6 +150,7 @@ calcForm.addEventListener("submit", (e) => {
 
   calcOut.classList.remove("d-none");
 });
+
 
 
 
