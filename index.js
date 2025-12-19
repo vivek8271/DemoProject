@@ -13,19 +13,19 @@ window.addEventListener("scroll", () => {
 });
 
 // Quick quote form
-const quickQuoteFor = document.getElementById("quickQuoteForm");
+const quickQuoteForm = document.getElementById("quickQuoteForm");
 const quickQuoteMsg = document.getElementById("quickQuoteMsg");
 quickQuoteFor.addEventListener("submit", async(e) => {
     e.preventDefault();
 
     const formData = {
-    name: quickQuoteFor.name.value,
-    mobile_no: quickQuoteFor.phone.value,
-    email: quickQuoteFor.email.value,
-    product: quickQuoteFor.product.value,
-    quantity : quickQuoteFor.quantity.value,
-    address : quickQuoteFor.location.value,
-    message: quickQuoteFor.message.value,
+    name: quickQuoteForm.name.value,
+    mobile_no: quickQuoteForm.phone.value,
+    email: quickQuoteForm.email.value,
+    product: quickQuoteForm.product.value,
+    quantity : quickQuoteForm.quantity.value,
+    address : quickQuoteForm.location.value,
+    message: quickQuoteForm.message.value,
     
   };
 
@@ -48,11 +48,11 @@ quickQuoteFor.addEventListener("submit", async(e) => {
   }
 
   quickQuoteMsg.classList.remove("d-none");
-  quickQuoteFor.reset();
+  quickQuoteForm.reset();
 });
 
 // Contact form + WhatsApp deeplink
-const contactFor = document.getElementById("contactForm");
+const contactForm = document.getElementById("contactForm");
 const contactMsg = document.getElementById("contactMsg");
 const waLink = document.getElementById("waLink");
 const waFab = document.getElementById("waFab");
@@ -75,11 +75,11 @@ contactFor.addEventListener("submit", async(e) => {
   e.preventDefault();
 
   const formData = {
-    name: contactFor.name.value,
-    mobile_no: contactFor.phone.value,
-    email: contactFor.email.value,
-    address : contactFor.address.value,
-    message: contactFor.message.value,
+    name: contactForm.name.value,
+    mobile_no: contactForm.phone.value,
+    email: contactForm.email.value,
+    address : contactForm.address.value,
+    message: contactForm.message.value,
     
   };
 
@@ -106,7 +106,7 @@ contactFor.addEventListener("submit", async(e) => {
 //   const url = buildWhatsAppURL(fields);
 //   waLink.setAttribute("href", url);
   contactMsg.classList.remove("d-none");
-  contactFor.reset();
+  contactForm.reset();
 //   window.open(url, "_blank");
 });
 
@@ -150,6 +150,7 @@ calcForm.addEventListener("submit", (e) => {
 
   calcOut.classList.remove("d-none");
 });
+
 
 
 
