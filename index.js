@@ -30,7 +30,7 @@ quickQuoteForm.addEventListener("submit", async(e) => {
   };
 
   try {
-    await fetch("/Backent/api/quick-quote-form", {
+    await fetch("https://aditienterprises.vercel.app/Backent/api/quick-quote-form", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -145,6 +145,7 @@ calcForm.addEventListener("submit", (e) => {
 
   calcOut.classList.remove("d-none");
 });
+
 
 
 
