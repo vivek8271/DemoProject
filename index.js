@@ -30,7 +30,7 @@ quickQuoteForm.addEventListener("submit", async(e) => {
   };
 
   try {
-    await fetch("https://backend-plum-two-11.vercel.app/api", {
+    await fetch("/quick-quote-form", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -145,6 +145,7 @@ calcForm.addEventListener("submit", (e) => {
 
   calcOut.classList.remove("d-none");
 });
+
 
 
 
