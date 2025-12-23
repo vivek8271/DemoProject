@@ -56,7 +56,7 @@ const contactForm = document.getElementById("contactForm");
 const contactMsg = document.getElementById("contactMsg");
 const waLink = document.getElementById("waLink");
 const waFab = document.getElementById("waFab");
-const whatsappNumber = "910000000000"; // Replace with your WhatsApp number, e.g., 9198XXXXXXXX
+const whatsappNumber = "+91 9852379313"; 
 
 function buildWhatsAppURL(fields) {
   const text = `Hello Aditi Enterprises,%0AName: ${fields.name}%0APhone: ${
@@ -145,18 +145,4 @@ calcForm.addEventListener("submit", (e) => {
 
   calcOut.classList.remove("d-none");
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
