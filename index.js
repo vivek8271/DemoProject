@@ -39,7 +39,7 @@ quickQuoteForm.addEventListener("submit", async(e) => {
     });
 
     // const result = await response.text();
-
+    quickQuoteMsg.classList.remove("d-none");
     alert("Thank's for choosing us! We contact you shortly.");
   } catch (error) {
     console.error("Error sending form:", error);
@@ -47,7 +47,6 @@ quickQuoteForm.addEventListener("submit", async(e) => {
     alert("Somthing went wrong");
   }
 
-  quickQuoteMsg.classList.remove("d-none");
   quickQuoteForm.reset();
 });
 
@@ -93,15 +92,15 @@ contactForm.addEventListener("submit", async(e) => {
     });
 
     // const result = await response.text();
-
-    aalert("Thank's for choosing us! We contact you shortly.");
+    contactMsg.classList.remove("d-none");
+    alert("Thank's for choosing us! We contact you shortly.");
   } catch (error) {
     console.error("Error sending form:", error);
 
     alert("Somthing went wrong");
   }
 
-  contactMsg.classList.remove("d-none");
+
   contactForm.reset();
 });
 
@@ -145,5 +144,6 @@ calcForm.addEventListener("submit", (e) => {
 
   calcOut.classList.remove("d-none");
 });
+
 
 
