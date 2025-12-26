@@ -147,3 +147,32 @@ calcForm.addEventListener("submit", (e) => {
 
 
 
+fetch("https://backend-plum-two-11.vercel.app/api/track-visit", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    path: window.location.pathname
+  })
+});
+
+
+// if (!sessionStorage.getItem("visited")) {
+//   sessionStorage.setItem("visited", "true");
+
+//   // send tracking request
+// }
+
+
+// const trackPages = ["/", "/about", "/contact"];
+// if (trackPages.includes(window.location.pathname)) {
+//   // send tracking
+// }
+
+
+// document.querySelectorAll("a").forEach(link => {
+//   link.addEventListener("click", () => {
+//     // send click data
+//   });
+// });
