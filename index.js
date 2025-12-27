@@ -79,7 +79,7 @@ contactForm.addEventListener("submit", async(e) => {
     email: contactForm.email.value,
     address : contactForm.address.value,
     message: contactForm.message.value,
-    time : new Date().ISOString(),
+    time : new Date().toISOString(),
   };
 
   try {
@@ -153,7 +153,8 @@ fetch("https://backend-plum-two-11.vercel.app/api/track-visit", {
     "Content-Type": "application/json"
   },
   body: JSON.stringify({
-    path: window.location.pathname
+    path: window.location.pathname,
+    time : new Date().toISOString(),
   })
 });
 
@@ -176,4 +177,5 @@ fetch("https://backend-plum-two-11.vercel.app/api/track-visit", {
 //     // send click data
 //   });
 // });
+
 
