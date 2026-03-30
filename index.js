@@ -23,7 +23,7 @@ quickQuoteForm.addEventListener("submit", async(e) => {
     mobile_no: quickQuoteForm.phone.value,
     email: quickQuoteForm.email.value,
     product: quickQuoteForm.product.value,
-    quantity : quickQuoteForm.quantity.value,
+    // quantity : quickQuoteForm.quantity.value,
     address : quickQuoteForm.location.value,
     message: quickQuoteForm.message.value,
     
