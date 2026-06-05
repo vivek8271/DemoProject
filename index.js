@@ -145,8 +145,6 @@ calcForm.addEventListener("submit", (e) => {
   calcOut.classList.remove("d-none");
 });
 
-
-
 fetch("https://backend-plum-two-11.vercel.app/api/track-visit", {
   method: "POST",
   headers: {
@@ -157,25 +155,3 @@ fetch("https://backend-plum-two-11.vercel.app/api/track-visit", {
     time : new Date().toISOString(),
   })
 });
-
-
-// if (!sessionStorage.getItem("visited")) {
-//   sessionStorage.setItem("visited", "true");
-
-//   // send tracking request
-// }
-
-
-// const trackPages = ["/", "/about", "/contact"];
-// if (trackPages.includes(window.location.pathname)) {
-//   // send tracking
-// }
-
-
-// document.querySelectorAll("a").forEach(link => {
-//   link.addEventListener("click", () => {
-//     // send click data
-//   });
-// });
-
-
